@@ -5,10 +5,12 @@ from api.views.category import (
     CategoryDetailAPIView, CategoryUpdateAPIView, CategoryDeleteAPIView
 )
 from api.views.event import EventViewSet
+from api.views.ticket import TicketViewSet
 
 
 router = DefaultRouter()
-router.register(r"events", EventViewSet, basename="event")
+router.register(r"events", EventViewSet, basename = "event")
+router.register(r"tickets", TicketViewSet, basename = "ticket")
 
 urlpatterns = [
     path("accounts/", include("api.accounts.urls")),
