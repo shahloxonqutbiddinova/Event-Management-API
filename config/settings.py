@@ -141,6 +141,19 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+DEFAULT_FROM_EMAIL = "noreply@event-management.com"
+
+#EMAIL_HOST = "smtp.gmail.com"
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
+
+#EMAIL_HOST_USER = "youremail@gmail.com"        # Ustoz o'zingizning gmailingizni kiriting
+#EMAIL_HOST_PASSWORD = "gmail_app_password"     # Gmail App Password yuklansin
+
+#DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
